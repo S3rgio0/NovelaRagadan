@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En la Sombra del Ragadán - Sergio Rodríguez</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        :root {
+            --bg-color: #ff3333; /* Rojo intenso */
+            --text-color: #000000; /* Negro */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 8px solid black;
+        }
+        h1 {
+            font-size: 11vw;
+            line-height: 0.8;
+            margin: 0;
+            letter-spacing: -0.05em;
+            font-weight: 900;
+        }
+        .author {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .quote-section {
+            padding: 4rem 2rem;
+            font-size: 4vw;
+            font-weight: 700;
+            line-height: 1.1;
+            border-bottom: 8px solid black;
+            text-align: justify;
+            text-transform: none;
+            background-color: #000;
+            color: var(--bg-color);
+        }
+        .reader-section {
+            padding: 4rem 2rem;
+            background-color: var(--bg-color);
+            border-bottom: 8px solid black;
+        }
+        .reader-section h2 {
+            font-size: 4rem;
+            margin-top: 0;
+            text-align: center;
+        }
+        .reader-content {
+            font-family: serif;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            text-transform: none;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.05);
+            padding: 2rem;
+            border: 2px solid black;
+        }
+        .download-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            border-bottom: 8px solid black;
+            background-color: #000;
+            color: var(--bg-color);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--bg-color);
+            color: black;
+            font-size: 2rem;
+            font-weight: 900;
+            padding: 1.5rem 4rem;
+            text-decoration: none;
+            border: 4px solid var(--bg-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+        .btn:hover {
+            background-color: black;
+            color: var(--bg-color);
+            border: 4px solid var(--bg-color);
+        }
+        .qr-section {
+            padding: 5rem 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--bg-color);
+        }
+        #qrcode {
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            display: inline-block;
+            border: 8px solid black;
+        }
+        footer {
+            padding: 2rem;
+            text-align: center;
+            font-weight: bold;
+            border-top: 8px solid black;
+            background: black;
+            color: var(--bg-color);
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 15vw; }
+            .quote-section { font-size: 6vw; }
+            .author { font-size: 1.5rem; }
+            .reader-content { font-size: 1.2rem; padding: 1rem; }
+            .btn { font-size: 1.5rem; padding: 1rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="author">SERGIO RODRÍGUEZ</div>
+        <h1>RAGADÁN</h1>
+        <h1>RAGADÁN</h1>
+        <h1>RAGADÁN</h1>
+    </header>
+
+    <section class="quote-section">
+        "Ragadán no está destruyéndose únicamente por sus diferencias ideológicas, sino por la incapacidad de sus habitantes para cuestionar aquello en lo que creen."
+    </section>
+
+    <section class="reader-section">
+        <h2>1. GABRIEL VANCE</h2>
+        <div class="reader-content">
+            <p><strong>LA COSTA - 5/01/2021</strong></p>
+            <p>Habíamos atravesado el estrecho en helicóptero. La salinidad del aire golpeaba mi rostro y el viento me llenaba la boca de un sabor amargo. El olor era una mezcla de basura, humedad y putrefacción. Así llegamos a la costa de Ragadán, un país que, según cuentan, nació de una leyenda.</p>
+            <p>Ragadán es la montaña más grande del continente. Se dice que, hace mucho tiempo, un grupo de personas intentó escalarla. Cuando estaban cerca de alcanzar la cumbre, sintieron la presencia del espíritu de la montaña.</p>
+            <p>Nadie ha podido explicar lo que ocurrió después.</p>
+            <p>Sus cuerpos comenzaron a temblar. La presión les descendió hasta el punto de que algunos se desmayaron, mientras otros quedaron paralizados, con la mirada fija en la montaña. Quienes sobrevivieron aseguraron haber contemplado su ira.</p>
+            <p>En el último tramo, la montaña entró en erupción.</p>
+            <p>Como si se tratara de Pompeya, el pueblo quedó sepultado bajo la lava. No hubo tiempo para escapar: en cuestión de instantes, lo que había sido un lugar habitado se convirtió en una extensión de ceniza y piedra, un infierno sobre la tierra.</p>
+        </div>
+    </section>
+
+    <section class="download-section">
+        <h2>LEE LA HISTORIA COMPLETA</h2>
+        <p>Descarga la novela en formato digital para continuar la lectura.</p>
+        <a href="Agregar un título.pdf" download class="btn" id="download-btn">DESCARGAR PDF</a>
+    </section>
+
+    <section class="qr-section">
+        <h2>DIFUNDE LA OBRA</h2>
+        <p>Escanea este código QR para acceder a la página web o compártelo en tus redes sociales.</p>
+        <div id="qrcode"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sergio Rodríguez - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Generar el código QR apuntando a la URL actual
+        var currentUrl = window.location.href;
+        
+        // Si el archivo se abre localmente sin servidor, usar una URL de placeholder
+        if (currentUrl.indexOf("file://") === 0 || currentUrl === "about:blank") {
+            currentUrl = "https://tu-usuario.github.io/novela-ragadan/"; 
+        }
+        
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: currentUrl,
+            width: 200,
+            height: 200,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>
